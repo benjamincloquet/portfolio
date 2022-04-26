@@ -8,12 +8,8 @@ module.exports = {
     parser: '@babel/eslint-parser',
     requireConfigFile: false,
   },
-  extends: [
-    '@nuxtjs',
-    'plugin:nuxt/recommended',
-    '@vue/eslint-config-prettier',
-  ],
+  extends: ['@nuxtjs', 'plugin:prettier/recommended', 'prettier'],
   plugins: [],
   // add your custom rules here
   rules: {},
-}
+};
