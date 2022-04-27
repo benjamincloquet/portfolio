@@ -1,0 +1,16 @@
+.highlight {
+  display: inline-block;
+  position: relative;
+  @apply px-2;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: -20%;
+    left: 0;
+    z-index: -1;
+    @apply bg-yellow-300;
+  }
+}
