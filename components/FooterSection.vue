@@ -1,6 +1,8 @@
 <template>
   <footer>
-    <p>Benjamin Cloquet</p>
+    <fluid-container>
+      <p>&copy; Benjamin Cloquet {{ new Date().getFullYear() }}</p>
+    </fluid-container>
   </footer>
 </template>
 

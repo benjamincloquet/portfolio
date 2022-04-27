@@ -14,3 +14,22 @@
     @apply bg-yellow-300;
   }
 }
+
+a:not([href^="/"]) {
+  font-weight: 500;
+
+  &::after {
+    display: inline-block;
+    content: "";
+    background-image: url(@/assets/icons/external-link.svg);
+    width: 1.25rem;
+    height: 1.25rem;
+    vertical-align: top;
+    margin-left: 0.4rem;
+    transition: transform cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+  }
+
+  &:hover::after {
+    transform: translate(0.1rem, -0.1rem);
+  }
+}

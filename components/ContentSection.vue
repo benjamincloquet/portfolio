@@ -26,7 +26,7 @@ export default {
     };
   },
   async fetch() {
-    this.content = await this.$content(this.slug).fetch();
+    this.content = await this.$content(this.$i18n.locale, this.slug).fetch();
   },
 };
 </script>

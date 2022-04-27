@@ -1,5 +1,5 @@
 export const state = () => ({
-  visibleSectionTitle: 'Title',
+  visibleSectionTitle: '',
 });
 
 export const mutations = {
