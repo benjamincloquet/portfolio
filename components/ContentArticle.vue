@@ -10,13 +10,13 @@
         class="w-32"
       />
     </div>
-    <div class="">
+    <div>
       <h2 class="text-3xl highlight font-semibold mb-2">{{ content.title }}</h2>
-      <p v-if="content.startDate" class="font-medium mb-2">
-        {{ formatDate(content.startDate) }} -
-        {{ content.endDate ? formatDate(content.endDate) : 'current' }}
+      <p v-if="content.startDate" class="font-medium mb-4">
+        {{ formatDate(content.startDate) }}
+        {{ content.endDate ? `- ${formatDate(content.endDate)}` : '' }}
       </p>
-      <nuxt-content :document="content" />
+      <nuxt-content :document="content" class="mt-2" />
     </div>
   </article>
 </template>

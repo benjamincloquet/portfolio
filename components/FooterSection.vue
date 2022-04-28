@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <fluid-container>
+    <fluid-container class="py-8">
       <p>&copy; Benjamin Cloquet {{ new Date().getFullYear() }}</p>
     </fluid-container>
   </footer>

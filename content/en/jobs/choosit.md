@@ -6,6 +6,6 @@ img: 'choosit.svg'
 ---
 
 I worked as a front end developer for Choosit. I took part in multiple client web projects in an agile setting, collaborating with web designers and backend developers to deliver ready-to-use, tailored products to businesses. I learned how to experiment with interactivity and accessibility guidelines within a tight production environment, while monitoring new upcoming techs.\
-Browse one of our projects here :
-
+Browse one of our projects here :\
+&nbsp;\
 [Côté Formations](https://www.coteformations.fr/)

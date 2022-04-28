@@ -9,6 +9,9 @@
     <portfolio-section title="Projects">
       <content-section slug="projects" />
     </portfolio-section>
+    <portfolio-section title="About Me">
+      <content-section slug="about" />
+    </portfolio-section>
     <section-title />
   </main>
 </template>

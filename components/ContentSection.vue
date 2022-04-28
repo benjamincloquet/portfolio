@@ -26,13 +26,15 @@ export default {
     };
   },
   async fetch() {
-    this.content = await this.$content(this.$i18n.locale, this.slug).fetch();
+    this.content = await this.$content(this.$i18n.locale, this.slug)
+      .sortBy('index')
+      .fetch();
   },
 };
 </script>
 
 <style lang="scss" scoped>
 section {
-  margin-bottom: 50vh;
+  margin-bottom: 0vh;
 }
 </style>
