@@ -1,3 +1,6 @@
 {
-  "greeting": "Hi, I'm Ben"
+  "greeting": "Hi, I'm Ben",
+  "email": "Email me",
+  "about": "I'm a software engineer based in Montpellier, France. I want to make the web a better place ! I do that every day by writing code, researching user experience and mostly being a good human.",
+  "tech": "My favourite frameworks are Vue.js and React. My guilty pleasure is solving complex problems with CSS-only solutions - but I always aim for simplicity first."
 }

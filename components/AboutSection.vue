@@ -1,17 +1,19 @@
 <template>
   <section class="min-h-screen">
     <fluid-container>
-      <h1 class="text-6xl font-semibold highlight mb-12">
+      <h1 class="text-6xl font-semibold highlight mb-10">
         {{ $t('greeting') }}
       </h1>
-      <p class="mb-4">
-        I'm a software engineer based in Montpellier, France. I want to make the
-        web a better place ! I do that every day by writing code, researching
-        user experience and mostly being a good human.
+      <p class="">
+        {{ $t('about') }}
+      </p>
+      <p class="mb-6">
+        {{ $t('tech') }}
       </p>
       <div class="flex gap-8 mb-4">
-        <a href="mailto:benjamin.cloquet@gmail.com">Email me</a>
+        <a href="mailto:benjamin.cloquet@gmail.com">{{ $t('email') }}</a>
         <a href="https://www.linkedin.com/in/benjamin-cloquet/">LinkedIn</a>
+        <a href="https://github.com/benjamincloquet">GitHub</a>
       </div>
       <div class="flex justify-center">
         <div class="img inline-block">

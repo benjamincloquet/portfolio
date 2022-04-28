@@ -1,3 +1,6 @@
 {
-  "greeting": "Moi, c'est Ben"
+  "greeting": "Moi, c'est Ben",
+  "email": "Contactez moi",
+  "about": "Je suis un ingénieur en informatique qui veut rendre le web plus facile à utiliser, ligne par ligne de code, mais aussi en m'intéressant à l'expérience utilisateur - et en essayant d'être une meilleure personne tous les jours.",
+  "tech": "Mes frameworks préférés sont Vue.js et React. J'aime les choses bien faites, les applis innovantes, le CSS bien organisé - mais je vise toujours la simplicité."
 }
