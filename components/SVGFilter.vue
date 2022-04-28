@@ -3,7 +3,7 @@
     <filter :id="filterId" x="0%" y="0%" width="100%" height="100%">
       <feTurbulence
         type="fractalNoise"
-        baseFrequency="0.03 0.03"
+        :baseFrequency="`${frequency} ${frequency}`"
         result="NOISE"
         numOctaves="2"
         :seed="seed"
@@ -32,7 +32,9 @@ export default {
   data() {
     return {
       seed: 0,
-      duration: 0.2,
+      duration: 0.1,
+      maxScale: 20,
+      frequency: 0.05,
     };
   },
   methods: {
@@ -43,7 +45,7 @@ export default {
       gsap
         .timeline()
         .to(this.$refs.displacementMap, {
-          attr: { scale: 1000 },
+          attr: { scale: this.maxScale },
           duration: this.duration,
           ease: 'power1.easeOut',
         })
@@ -59,7 +61,7 @@ export default {
       gsap
         .timeline()
         .to(this.$refs.displacementMap, {
-          attr: { scale: 1000 },
+          attr: { scale: this.maxScale },
           duration: 0,
         })
         .add(callback)
