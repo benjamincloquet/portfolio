@@ -28,9 +28,9 @@ export default {
     newTitle(newTitle, oldTitle) {
       this.visible = false;
       if (oldTitle === '') {
-        this.$refs.filter.fadeIn(this.updateTitle);
+        this.$refs.filter.distortOut(this.updateTitle);
       } else {
-        this.$refs.filter.fadeOutAndIn(this.updateTitle);
+        this.$refs.filter.distortInAndOut(this.updateTitle);
       }
     },
   },

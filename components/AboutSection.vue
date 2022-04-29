@@ -24,7 +24,7 @@
             alt="Benjamin Cloquet"
             class="w-full max-w-xs sm:max-w-sm"
           />
-          <SVGFilter filter-id="about-img" />
+          <hover-filter filter-id="about-img" class="interactive-div" />
         </div>
       </div>
     </fluid-container>
@@ -39,7 +39,7 @@ export default {};
 .img {
   position: relative;
 
-  &::before {
+  .interactive-div {
     content: '';
     position: absolute;
     width: 40%;

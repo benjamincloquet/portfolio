@@ -28,12 +28,15 @@ export default {
       type: String,
       default: null,
     },
+    scale: {
+      type: Number,
+      default: 20,
+    },
   },
   data() {
     return {
       seed: 0,
       duration: 0.1,
-      maxScale: 20,
       frequency: 0.05,
     };
   },
@@ -41,36 +44,29 @@ export default {
     setRandomSeed() {
       this.seed = Math.floor(Math.random() * 10000);
     },
-    fadeOutAndIn(callback) {
-      gsap
-        .timeline()
-        .to(this.$refs.displacementMap, {
-          attr: { scale: this.maxScale },
-          duration: this.duration,
-          ease: 'power1.easeOut',
-        })
-        .add(callback)
-        .add(this.setRandomSeed)
-        .to(this.$refs.displacementMap, {
-          attr: { scale: 0 },
-          duration: this.duration,
-          ease: 'power1.easeOut',
-        });
+    animateFilter(callback, scale) {
+      const timeline = gsap.timeline();
+      timeline.to(this.$refs.displacementMap, {
+        attr: { scale },
+        duration: this.duration,
+        ease: 'power1.easeOut',
+      });
+      if (callback) {
+        timeline.add(callback);
+      }
     },
-    fadeIn(callback) {
-      gsap
-        .timeline()
-        .to(this.$refs.displacementMap, {
-          attr: { scale: this.maxScale },
-          duration: 0,
-        })
-        .add(callback)
-        .add(this.setRandomSeed)
-        .to(this.$refs.displacementMap, {
-          attr: { scale: 0 },
-          duration: this.duration,
-          ease: 'power1.easeOut',
-        });
+    distortIn(callback) {
+      this.setRandomSeed();
+      this.animateFilter(callback, this.scale);
+    },
+    distortOut(callback) {
+      this.animateFilter(callback, 0);
+    },
+    distortInAndOut(callback) {
+      this.distortIn(() => {
+        callback();
+        this.distortOut();
+      });
     },
   },
 };
