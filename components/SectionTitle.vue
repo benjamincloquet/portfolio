@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed top-1/2 left-0 px-8">
+  <div class="fixed top-1/2 left-0 px-8 opacity-5 lg:opacity-100">
     <p
       :class="`text-6xl font-semibold transition-opacity ${
         visible ? '' : 'opacity-0'

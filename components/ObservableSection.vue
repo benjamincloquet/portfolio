@@ -1,5 +1,5 @@
 <template>
-  <observer :threshold="0.5" @on-change="onChange">
+  <observer root-margin="-400px" @on-change="onChange">
     <slot />
   </observer>
 </template>

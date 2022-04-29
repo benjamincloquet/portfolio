@@ -1,7 +1,7 @@
 <template>
-  <section class="min-h-screen">
+  <section class="pb-20 lg:pb-40">
     <fluid-container>
-      <h1 class="text-6xl font-semibold highlight mb-10">
+      <h1 class="text-5xl md:text-6xl font-semibold highlight mb-10">
         {{ $t('greeting') }}
       </h1>
       <p class="">
@@ -10,14 +10,20 @@
       <p class="mb-6">
         {{ $t('tech') }}
       </p>
-      <div class="flex gap-8 mb-4">
+      <div
+        class="flex flex-col items-center md:items-start sm:flex-row gap-8 mb-4"
+      >
         <a href="mailto:benjamin.cloquet@gmail.com">{{ $t('email') }}</a>
         <a href="https://www.linkedin.com/in/benjamin-cloquet/">LinkedIn</a>
         <a href="https://github.com/benjamincloquet">GitHub</a>
       </div>
       <div class="flex justify-center">
         <div class="img inline-block">
-          <img src="portrait.webp" alt="Benjamin Cloquet" class="max-w-sm" />
+          <img
+            src="portrait.webp"
+            alt="Benjamin Cloquet"
+            class="w-full max-w-xs sm:max-w-sm"
+          />
           <SVGFilter filter-id="about-img" />
         </div>
       </div>

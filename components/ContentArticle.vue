@@ -1,8 +1,8 @@
 <template>
-  <article class="flex mb-60">
+  <article class="flex flex-col sm:flex-row mb-20 sm:mb-60">
     <div
       v-if="content.img"
-      class="w-1/3 flex-none flex items-center justify-center"
+      class="w-1/3 py-12 flex-none flex items-center justify-center"
     >
       <img
         :src="require(`~/assets/content/${content.img}`)"
