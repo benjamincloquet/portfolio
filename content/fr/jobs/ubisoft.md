@@ -6,8 +6,8 @@ img: 'ubisoft.svg'
 index: 2
 ---
 
-I worked as a gameplay programmer for Ubisoft Montpellier. I was put in charge of the development of multiple features in an agile environment, from alpha to post-launch. I learned how to write production-ready C++ components within AAA scale projects, collaborating with designers in an international setting involving five different studios around Europe.\
-Check out the two projects I worked on here :\
+J'ai commencé ma carrière chez Ubisoft Montpellier comme programmeur gameplay. Dans un environnement agile, j'ai pris contrôle de plusieurs features de l'alpha jusqu'au post-launch de projets AAA. J'ai appris à concevoir des composants C++ prêts à être déployés un environnement de production, collaborant avec designers et programmeurs de cinq studios Européens différents.\
+J'ai travaillé sur ces deux projets :\
 &nbsp;\
 [Tom Clancy's Ghost Recon Breakpoint](https://www.youtube.com/watch?v=qAtpqGt5ESw)\
 &nbsp;\
